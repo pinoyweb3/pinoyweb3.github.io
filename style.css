@@ -1,0 +1,88 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    margin: 0px;
+}
+p {
+    margin: 2rem;
+    text-align: center;
+    padding: 0px;
+    font-size: 20px;
+}
+nav {
+    position: sticky;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid #aeaeae;
+}
+h3 {
+    font-weight: bold;
+}
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.item-button{
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    background-color: rgb(222, 222, 222) ;
+}
+.nav {
+    padding: 25px;
+    display: grid;
+}
+
+.border-light {
+    border: 1px solid #aeaeae;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-inline: auto;
+    margin: 1rem 2rem;
+    grid-template-columns: repeat(1, 1fr);
+
+
+    margin-bottom: 4%;
+    margin-right: 4%;
+}
+
+.header {
+    margin-bottom: 4%;
+    margin-right: 4%;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    margin-left: 20vw;
+}
+
+.item-content {
+    padding: 20px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+}
+.item-content img {
+    text-align: center;
+    margin: 10px 5rem;
+}
+.item {
+    margin-bottom: 4%;
+    margin-right: 4%;
+}
