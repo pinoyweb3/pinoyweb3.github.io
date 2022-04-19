@@ -37,7 +37,9 @@ a {
     font-weight: bold;
     color: black;
     width: 100%;
-    background-color: rgb(222, 222, 222) ;
+    background-color: rgb(222, 222, 222);
+
+    cursor: pointer;
 }
 .nav {
     padding: 25px;
