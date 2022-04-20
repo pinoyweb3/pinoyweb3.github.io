@@ -26,7 +26,6 @@ h3 {
 }
 img {
     width: 100%;
-    max-width: 400px;
     height: auto;
 }
 a {
@@ -75,8 +74,18 @@ button{
     background-color: #000e52;
     color: rgb(255, 255, 255);
 }
+.nav-image{
+    max-width: 400px;
+}
+.nav-break{
+    display: none;
+}
 
-
+@media screen and (max-width: 500px) {
+    .nav-break {
+        display: initial;
+    }
+}
 /* MISC */
 .border-light {
     border: 1px solid #aeaeae;
@@ -108,7 +117,14 @@ button{
     left: 50%;
     top: 50%;
 }
+@media screen and (max-width: 800px) {
+    .container {
+        margin-left: 6px;
+    }
+}
 /* items */
+
+
 .item-button{
     padding: 15px;
     font-weight: bold;
@@ -126,11 +142,22 @@ button{
 }
 .item-content img {
     text-align: center;
-    margin: 10px 5rem;
+    margin: 10px 0rem;
 }
 .item {
     margin-bottom: 4%;
     margin-right: 4%;
 }
-
+.item-image{
+    max-width: 400px;
+}
+@media screen and (max-width: 800px) {
+    .item-content{
+        grid-template-columns: 1fr;
+    }
+    .item-content img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /* QNA */
