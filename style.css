@@ -24,13 +24,24 @@ nav {
 h3 {
     font-weight: bold;
 }
+h2, h3{
+    text-align: center;
+}
+ ul, ol {
+    padding: 0px;
+    margin: 0px;
+}
 img {
     width: 100%;
     height: auto;
 }
 a {
-    color: black;
+    color: #300000;
     text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    color: #cd3636;
 }
 button{
     border: none;
@@ -41,12 +52,21 @@ button{
     padding: 0px;
     display: grid;
 }
+.nav a {
+color: black;
+
+}
+.nav a:hover{
+color: black;
+}
 .nav-content {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
+.nav-content h2 {
+    text-align: left;
+}
 .nav-links {
     text-align: right;
 
@@ -74,9 +94,6 @@ button{
     background-color: #000e52;
     color: rgb(255, 255, 255);
 }
-.nav-image{
-    max-width: 400px;
-}
 .nav-break{
     display: none;
 }
@@ -103,7 +120,7 @@ button{
     margin-bottom: 4%;
     margin-right: 4%;
 }
-
+/* header */
 .header {
     margin-bottom: 4%;
     margin-right: 4%;
@@ -112,6 +129,9 @@ button{
     text-align: center;
 }
 
+.header-image{
+    max-width: 400px;
+}
 .header-container {
     display: block;
     left: 50%;
@@ -131,8 +151,13 @@ button{
     color: black;
     width: 100%;
     background-color: rgb(230, 207, 0);
-}
 
+    transition: 0.5s;
+}
+.item-button:hover{
+    color: white;
+    background-color: rgb(146, 131, 0);
+}
 
 .item-content {
     padding: 20px;
@@ -143,6 +168,9 @@ button{
 .item-content img {
     text-align: center;
     margin: 10px 0rem;
+}
+.item-content h3 {
+    text-align: left;
 }
 .item {
     margin-bottom: 4%;
@@ -160,4 +188,50 @@ button{
         margin-right: auto;
     }
 }
-/* QNA */
+
+/* list */
+.list-headers {
+    font-size: 21px;
+}
+.list-container {
+    margin: auto 10rem;
+    padding: 20px;
+}
+.list-container ol {
+    margin: 2rem 1rem;
+}
+.list-container p {
+    margin: 2rem 0.5rem;
+    text-align: left;
+    font-size: 15px
+}
+@media screen and (max-width: 1025px){
+    .list-container {
+        margin: auto 4rem;
+    }
+}
+@media screen and (max-width: 705px){
+    .list-container {
+        margin: auto 2rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    .list-container {
+        margin: auto 1rem;
+    }
+}
+
+/* article */
+.article img {
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-image {
+    max-width: 800px;
+}
+/* Q & A */
+
+/* Join */
